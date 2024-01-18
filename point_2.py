@@ -4,6 +4,7 @@ from openpyxl import Workbook, load_workbook
 import time
 
 
+
 def get_word_definition(word):
     driver = webdriver.Chrome()  # Make sure to use the appropriate driver for your browser
 

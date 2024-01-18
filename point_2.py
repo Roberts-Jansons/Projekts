@@ -1,7 +1,6 @@
 import selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.keys import Keys
 from openpyxl import Workbook, load_workbook
 import time
 import sys

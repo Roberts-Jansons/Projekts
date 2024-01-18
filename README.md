@@ -15,10 +15,8 @@ Un šādos gadījumos vēl papildus jāmeklē, ko šie termini nozīmē, saprota
 
 **1. selenium un selenium Webdriver** - bibliotēka, kas ļauj atvērt interneta resursus / mājaslapas
 
-**2. from selenium.webdriver.common.keys import Keys**
+**2. from openpyxl import Workbook, load_workbook** - bibliotēka, kas paredzēta darbam ar dažādu 2010. gada un jaunāku uz excel bāzētu failu veidiem, piemēram,".xlsx", vispazīstamākamais no tiem, sniedz ispēju gan izveidot jaunu excel failu, gan atvērt iepriekš pastāvošu no, kura iespējams nolasīt vai rakstīt, vai izdzēst informāciju. ```import Workbook``` pievienu excel faila izveides funkcijas, piemēram, ```workbook = Workbook()``` lai inicilizētu to. Turpretī ```load_workbook``` ļauj izmantot pastāvošos excel failus, piemēram, ```wb=load_workbook(file)``` definē, kas workbook kāds pastāvoš excel fails.
 
-**3. from openpyxl import Workbook, load_workbook** 
+**3. time** - bibliotēka, kas atļauj veikt dažādas funkcijas, kas saistītas ar laiku, pimēram, noteik tā brīža laiku vai uzsākt atsakiti, vai uzņemt taimeri u.c. Kodā tiek izmantots, lai varētu ar funkciju ```time.sleep(2)``` varētu aizkavēt tālāk koda izpildi, lai atļautu mājaslapai atvērties
 
-**4. time** - bibliotēka, kas atļauj veikt dažādas funkcijas, kas saistītas ar laiku, pimēram, noteik tā brīža laiku vai uzsākt atsakiti, vai uzņemt taimeri u.c. Kodā tiek izmantots, lai varētu ar funkciju ```time.sleep(2)``` varētu aizkavēt tālāk koda izpildi, lai atļautu mājaslapai atvērties
-
-**5. sys** - bibliotēka, kuru izmantojot, litotājs spēj ar funkcijām ietekēt gan pašu python intepretāju vai arī apstrādāt mainīgos, kurus intepretājs izmanto vai "uztur". Projektā izmantotā ```sys.exit()``` funkcija aptur tālāka koda izpildi, līdz ar to apturot interpretāju, piemēram, ja kods palaist izmantojot IDLE, tad IDLE Shell.
+**4. sys** - bibliotēka, kuru izmantojot, litotājs spēj ar funkcijām ietekēt gan pašu python intepretāju vai arī apstrādāt mainīgos, kurus intepretājs izmanto vai "uztur". Projektā izmantotā ```sys.exit()``` funkcija aptur tālāka koda izpildi, līdz ar to apturot interpretāju, piemēram, ja kods palaist izmantojot IDLE, tad IDLE Shell.

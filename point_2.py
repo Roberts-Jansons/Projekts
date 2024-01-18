@@ -1,5 +1,6 @@
 import selenium
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from openpyxl import Workbook, load_workbook
 import time
@@ -8,6 +9,8 @@ import sys
 
     
 def get_word_definition(word, dictionary_number):
+    service = Service()
+    option = webdriver.ChromeOptions()
     driver = webdriver.Chrome()  # Make sure to use the appropriate driver for your browser
 
     try:
@@ -19,15 +22,9 @@ def get_word_definition(word, dictionary_number):
         while not_found_defintion==True:
             link=links[i]+word
             driver.get(link)
-            
-            # Find the search input field and enter the word
-            #search_box = driver.find_element("id", "q")
-            #search_box.clear()
-            #search_box.send_keys(word)
-            #search_box.send_keys(Keys.RETURN)
+            time.sleep(2)
 
             # Find the definition element and retrieve its text
-
             if i==0:
                 try:
                     content_other=driver.find_element("class name", "E17D6zMGNMyhZ9DoRo9R")
